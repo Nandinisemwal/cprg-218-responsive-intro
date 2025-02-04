@@ -21,9 +21,13 @@ header {
 
 main {
     grid-area: main;
-    background-color: #c86c92;
 }
 
+#desktop {
+    background-color: #e799c5;
+    color: #28161e;
+    padding: 1.4rem;
+}
 nav{
     grid-area: nav;
     background-color: rgb(212, 138, 165);
@@ -43,6 +47,9 @@ footer{
         "nav"
         "footer"
         ;
-    }
     /*display:block;*/
+}
+#desktop {
+    display: none;
+}
 }
