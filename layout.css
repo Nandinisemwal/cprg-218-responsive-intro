@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    background-color: #ffd9e9;
+}
+
+#container{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer"
+    ;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+}
+header {
+    grid-area: header;
+    background-color: rgb(255, 144, 209);
+    color: #000000
+}
+
+main {
+    grid-area: main;
+    background-color: #c86c92;
+}
+
+nav{
+    grid-area: nav;
+    background-color: rgb(212, 138, 165);
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(222, 144, 179);
+    color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        grid-template-areas: 
+        "header"
+        "main"
+        "nav"
+        "footer"
+        ;
+    }
+    /*display:block;*/
+}
